@@ -8,10 +8,10 @@ apt upgrade -y
 
 echo
 echo -e "\e[93m menginstall paket yang di butuhkan."
-apt install wget -y
-apt install git -y
+pkg install wget proot -y
 
-
+echo
+echo -e "\e[93m memberikan izin pada data."
 chmod +x installKali.sh
 
 echo
