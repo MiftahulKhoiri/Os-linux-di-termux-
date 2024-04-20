@@ -4,5 +4,11 @@ clear
 
 apt update && apt upgrade -y
 
-chmod +x 
+apt install wget -y
+apt install git -y
+
+
+chmod +x installKali.sh
+
+installKali.sh
 
