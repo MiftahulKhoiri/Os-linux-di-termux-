@@ -10,6 +10,9 @@ echo
 echo -e "\e[93m menginstall paket yang di butuhkan."
 pkg install wget proot -y
 
+echo
+echo -e "\e[93m mendapatkan data"
+
 git clone https://github.com/MiftahulKhoiri/Os-linux-scrip.sh/blob/main/Kali-Linux.sh
 
 echo
@@ -18,5 +21,5 @@ chmod +x Kali-Linux.sh
 
 echo
 echo -e "\e[93m script ini akan menginstall kalilinux di termux secara otomatis."
-installKali.sh
+Kali-Linux.sh
 
