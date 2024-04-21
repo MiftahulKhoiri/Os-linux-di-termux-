@@ -1,14 +1,13 @@
 #! bin/bash
 
 clear
-echo
-echo -e "\e[93mMmemindai pembaruan paket."
+echo -e "memindai pembaruan paket."
 apt update
 apt list --upgradable
 apt upgrade -y
-
-echo
-echo -e "\e[93mNenginstall paket yang di butuhkan."
+sleep 5
+clear
+echo -e "menginstall paket yang di butuhkan."
 pkg install wget proot -y
 
 echo
