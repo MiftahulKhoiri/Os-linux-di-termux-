@@ -4,6 +4,7 @@ clear
 echo
 echo -e "\e[93mMmemindai pembaruan paket."
 apt update
+apt list --upgradable
 apt upgrade -y
 
 echo
