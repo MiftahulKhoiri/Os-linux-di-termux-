@@ -6,4 +6,5 @@ git clone https://github.com/MiftahulKhoiri/Os-linux-scrip.sh.git
 
 echo "memperoses file "
 cd /data/data/com.termux/files/home/Os-linux-di-termux-/
-chmod +x 
+chmod +x mulai-install.sh
+cp mulai-install.sh
