@@ -1,6 +1,5 @@
 #! bin/bash
 
-
 echo "memeriksakan pembaruan "
 clear 
 echo "10 ##########"
