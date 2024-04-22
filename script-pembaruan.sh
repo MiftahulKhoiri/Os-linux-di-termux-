@@ -36,7 +36,6 @@ clear
 echo "terdapat pembaruan file"
 sleep 3
 echo "memulai download file"
-rm -rf Os-linux-di-termux-/
 git clone https://github.com/MiftahulKhoiri/Os-linux-scrip.sh.git
 sleep 3
 echo "memperoses file "
