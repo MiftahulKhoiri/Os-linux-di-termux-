@@ -23,6 +23,8 @@ cd /data/data/com.termux/files/home/
 rm dir -rf linux/
 mkdir linux
 cd /data/data/com.termux/files/home/Os-linux-di-termux-/
+ls
+sleep 3
 chmod +x mulai-install.sh
 chmod +x script-pembaruan.sh
 cp script-pembaruan.sh /data/data/com.termux/files/home/linux/
