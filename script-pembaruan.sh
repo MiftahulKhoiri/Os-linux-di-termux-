@@ -1,38 +1,17 @@
-#! bin/bash
+#!/bin/bash
 
-echo "memeriksakan pembaruan "
-clear 
-echo "10 ##########"
-sleep 1
-clear 
-echo "9 #########"
-sleep 1
-clear 
-echo "8 ########"
-sleep 1
-clear 
-echo "7 #######"
-sleep 1
-clear
-echo "6 ######"
-sleep 1
-clear 
-echo "5 #####"
-sleep 1
-clear
-echo "4 ####"
-sleep 1
-clear 
-echo "3 ###"
-sleep 1
-clear 
-echo "2 ##"
-sleep 1
-clear 
-echo "1 #"
-sleep 1
-clear 
-echo "terdapat pembaruan file"
+echo "memeriksa pembaruan "
+LOADING="[....................................................................................................]" 
+icon="="
+  for i in $(seq 1 100); do
+      LOADING=${LOADING/./$icon} 
+      sleep 0.20
+      clear
+      echo $LOADING $i"%"
+  done
+
+sleep 2
+echo "terdapat pembaruan file "
 sleep 3
 echo "memulai download file"
 git clone https://github.com/MiftahulKhoiri/Os-linux-scrip.sh.git
@@ -41,8 +20,10 @@ echo "memperoses file "
 cd /data/data/com.termux/files/home/Os-linux-di-termux-/
 chmod +x mulai-install.sh
 chmod +x script-pembaruan.sh
-cp script-pembaruan.sh /data/data/com.termux/files/home
-cp mulai-install.sh /data/data/com.termux/files/home
+cd /data/data/com.termux/files/home
+mkdir linux
+cp script-pembaruan.sh /data/data/com.termux/files/home/linux/
+cp mulai-install.sh /data/data/com.termux/files/home/linux/
 sleep 3
 echo "membersihkan file sampah "
 rm dir -rf Os-linux-di-termux-/
