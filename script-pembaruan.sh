@@ -9,8 +9,6 @@ icon="="
       clear
       echo $LOADING $i"%"
   done
-
-sleep 2
 echo "terdapat pembaruan file "
 sleep 3
 clear 
