@@ -27,6 +27,8 @@ ls
 sleep 3
 chmod +x mulai-install.sh
 chmod +x script-pembaruan.sh
+ls
+sleep 4
 cp script-pembaruan.sh /data/data/com.termux/files/home/linux/
 cp mulai-install.sh /data/data/com.termux/files/home/linux/
 sleep 3
